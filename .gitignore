@@ -1,0 +1,27 @@
+# Private records and outputs must not enter this repository
+*.ged
+*.GED
+*.gedcom
+*.GEDCOM
+*.gedzip
+private/
+**/private/
+*.pdf
+*.docx
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.zip
+*.sqlite
+*.db
+*.json
+*.jsonl
+*.csv
+.env
+*.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
