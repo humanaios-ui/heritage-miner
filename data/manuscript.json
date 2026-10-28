@@ -1,0 +1,127 @@
+{
+  "edition": "1992",
+  "synthetic": true,
+  "version": "1992-synthetic-v1",
+  "title": "The Alderwick Chronicle",
+  "dedication": "For those who kept the lamp lit, and for those who will carry it on.",
+  "foreword": "This book gathers what the Alderwick family remembered in the autumn of 1992, set down by Edith Alderwick from letters, kitchen-table talk and one tin box of photographs. It is not a finished history. Where memory and paper disagree we have said so.",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "The Mill at Marrowby",
+      "pages": [
+        "p004",
+        "p005",
+        "p006",
+        "p007",
+        "p008",
+        "p009"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "id": "p001",
+      "printed_number": null,
+      "scan": "data/pages/page-001.svg",
+      "alt": "Cloth book cover, dark green with gilt title 'The Alderwick Chronicle' and 'Marrowby, 1992'. Synthetic facsimile.",
+      "orientation_corrected": false,
+      "transcription": "THE ALDERWICK CHRONICLE\nA Family History\nMarrowby, 1992",
+      "transcription_status": "verified",
+      "interpretation_note": null,
+      "kind": "cover"
+    },
+    {
+      "id": "p002",
+      "printed_number": null,
+      "scan": "data/pages/page-002.svg",
+      "alt": "Dedication page: a short italic dedication centred on cream paper.",
+      "orientation_corrected": false,
+      "transcription": "For those who kept the lamp lit,\nand for those who will carry it on.",
+      "transcription_status": "verified",
+      "interpretation_note": null,
+      "kind": "text"
+    },
+    {
+      "id": "p003",
+      "printed_number": null,
+      "scan": "data/pages/page-003.svg",
+      "alt": "Foreword page: five lines of typeset text under the heading Foreword.",
+      "orientation_corrected": false,
+      "transcription": "Foreword\nThis book gathers what the Alderwick family remembered\nin the autumn of 1992, set down by Edith Alderwick\nfrom letters, kitchen-table talk and one tin box\nof photographs. It is not a finished history.\nWhere memory and paper disagree we have said so.",
+      "transcription_status": "verified",
+      "interpretation_note": "The foreword speaks of 'one tin box'; no other page mentions it, so its contents are unknown.",
+      "kind": "text"
+    },
+    {
+      "id": "p004",
+      "printed_number": 1,
+      "scan": "data/pages/page-004.svg",
+      "alt": "Chapter One opening page, typeset, with a drop heading and nine lines of text.",
+      "orientation_corrected": false,
+      "transcription": "CHAPTER ONE\nThe Mill at Marrowby\n\nTobias Alderwick was born in the spring of 1861\nin the cottage beside Marrowby mill, the third\nof seven children. His father kept the sluice\nand his mother kept the accounts, such as they were.\n\nHe is said to have walked to Harlowe fair at nine\nand come home with a goose and a sixpence.",
+      "transcription_status": "verified",
+      "interpretation_note": "'Said to have walked' signals family hearsay, not a recorded fact.",
+      "kind": "text"
+    },
+    {
+      "id": "p005",
+      "printed_number": 3,
+      "scan": "data/pages/page-005.svg",
+      "alt": "Typeset page, scanned upside down and rotated to read correctly; slight skew visible.",
+      "orientation_corrected": true,
+      "transcription": "In 1889 Tobias married Hester Pell at St Oswin's,\nMarrowby. The register, we are told, was\nsigned with a steady hand on both sides.\n\nTheir first child, Walter, arrived the next winter.\nThe cottage was by then too small, so the\nfamily moved up the lane to Sluice House.",
+      "transcription_status": "unchecked",
+      "interpretation_note": "Reader suspects 'steady hand' may be a later gloss; the scan is faint at line 3.",
+      "kind": "text"
+    },
+    {
+      "id": "p006",
+      "printed_number": 5,
+      "scan": "data/pages/page-006.svg",
+      "alt": "Mounted sepia photograph of a stern couple before a stone house; below it a handwritten pencil caption.",
+      "orientation_corrected": false,
+      "transcription": "Tobias & Hester, outside Sluice House, c. 1895",
+      "transcription_status": "verified",
+      "interpretation_note": "Date 'c. 1895' is the captioner's guess, written in a different hand from the name.",
+      "kind": "photo"
+    },
+    {
+      "id": "p007",
+      "printed_number": 7,
+      "scan": "data/pages/page-007.svg",
+      "alt": "Hand-ruled family diagram: Tobias Alderwick married to Hester Pell, with a line down to their son Walter.",
+      "orientation_corrected": false,
+      "transcription": "Tobias Alderwick (b. 1861) = Hester Pell (b. 1865)\nWalter Alderwick (b. 1890)",
+      "transcription_status": "verified",
+      "interpretation_note": "The diagram gives Tobias's birth year as 1861, matching p004; ink has been darkened on 'Walter'.",
+      "kind": "diagram"
+    },
+    {
+      "id": "p008",
+      "printed_number": 9,
+      "scan": "data/pages/page-008.svg",
+      "alt": "Typeset page with six lines and a faint coffee ring in the lower corner.",
+      "orientation_corrected": false,
+      "transcription": "Walter grew up at Sluice House and took over\nthe mill lease in 1912. He never spoke of\nthe years before, and we have not pressed him.\n\nA cousin recalls a letter from overseas, kept\nin the tin box, but nobody has seen it since.",
+      "transcription_status": "verified",
+      "interpretation_note": "The overseas letter is mentioned only here; no other source is cited.",
+      "kind": "text"
+    },
+    {
+      "id": "p009",
+      "printed_number": 11,
+      "scan": "data/pages/page-009.svg",
+      "alt": "Page left blank except for a printed number and a faint pencil mark.",
+      "orientation_corrected": false,
+      "transcription": null,
+      "transcription_status": "none",
+      "interpretation_note": null,
+      "kind": "text"
+    }
+  ],
+  "completeness": {
+    "status": "OPEN",
+    "note": "printed numbers 1,3,5,7,9,11; even pages unaccounted for. Not claimed complete."
+  }
+}

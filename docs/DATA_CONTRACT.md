@@ -30,6 +30,10 @@ Printed numbers deliberately odd-only (1,3,5) to model the OPEN COMPLETENESS QUE
   "title","body","audience":"family|private-review|public","license":"...","involves_minor":false,
   "status":"pending|approved|rejected","reviewed_by":null|"label","reviewed_at":null|"ISO","attaches_to":"p003"|null,
   "base_edition_version":"..." }
+`data/contributions/index.json` = JSON array of contribution filenames (e.g. `["c001.json","c002.json"]`), sorted, excluding itself.
+The reader fetches only these (no directory-listing scrape). Dev: `review_queue.py` regenerates it on every decision and
+`validate_data.py` checks it lists exactly the contribution files. Public bundle: `build_public.py` writes it with approved files only.
+The reader still filters on status=="approved". A normal empty pending queue is valid.
 Rule: only status=="approved" is copied to the public bundle. Contributions NEVER modify manuscript.json.
 Approved ones render as clearly dated "Added <date> by <label> — not part of the 1992 edition".
 Review decisions append to `data/review_log.jsonl` (append-only, one JSON per line, each with prev_hash and hash = sha256 of prev_hash+record).

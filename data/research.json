@@ -1,0 +1,93 @@
+{
+  "claims": [
+    {
+      "id": "cl1",
+      "text": "The manuscript states Tobias Alderwick was born in spring 1861.",
+      "label": "OBSERVED",
+      "sources": [
+        {
+          "kind": "manuscript",
+          "ref": "p004",
+          "note": "Chapter One, line 1"
+        },
+        {
+          "kind": "manuscript",
+          "ref": "p007",
+          "note": "Diagram repeats b. 1861"
+        }
+      ],
+      "discrepancy": null
+    },
+    {
+      "id": "cl2",
+      "text": "Tobias Alderwick married Hester Pell in 1889.",
+      "label": "SUPPORTED",
+      "sources": [
+        {
+          "kind": "manuscript",
+          "ref": "p005",
+          "note": "Marriage at St Oswin's"
+        },
+        {
+          "kind": "gedcom",
+          "ref": "synthetic-gedcom-example",
+          "note": "MARR 1889 in the synthetic example"
+        }
+      ],
+      "discrepancy": null
+    },
+    {
+      "id": "cl3",
+      "text": "Tobias Alderwick was born in 1861.",
+      "label": "CONTRADICTED",
+      "sources": [
+        {
+          "kind": "manuscript",
+          "ref": "p004",
+          "note": "1861"
+        },
+        {
+          "kind": "gedcom",
+          "ref": "synthetic-gedcom-example",
+          "note": "BIRT 1863"
+        }
+      ],
+      "discrepancy": {
+        "between": [
+          "manuscript",
+          "gedcom"
+        ],
+        "detail": "Manuscript gives birth year 1861; synthetic GEDCOM example gives 1863. Neither is privileged; a human must decide."
+      }
+    },
+    {
+      "id": "cl4",
+      "text": "A letter from overseas is kept in the tin box.",
+      "label": "UNVERIFIED",
+      "sources": [
+        {
+          "kind": "manuscript",
+          "ref": "p008",
+          "note": "Cousin's recollection only"
+        }
+      ],
+      "discrepancy": null
+    }
+  ],
+  "leads": [
+    {
+      "id": "ld1",
+      "opaque": true,
+      "executable": false,
+      "claim_id": "cl3",
+      "requires_human_approval": true
+    },
+    {
+      "id": "ld2",
+      "opaque": true,
+      "executable": false,
+      "claim_id": "cl4",
+      "requires_human_approval": true
+    }
+  ]
+}

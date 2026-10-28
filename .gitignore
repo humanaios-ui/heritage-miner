@@ -1,0 +1,9 @@
+*.pdf
+*.ged
+*.gedcom
+private/
+scans/
+raw/
+dist/
+__pycache__/
+*.pyc
