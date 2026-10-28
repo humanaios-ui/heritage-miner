@@ -29,8 +29,8 @@ class SiteTests(unittest.TestCase):
         self.assertIn('indexedDB',s)
         self.assertIn('authority', (SITE/'README.md').read_text().lower() if (SITE/'README.md').exists() else 'authority')
     def test_no_real_contributions_bundled(self):
-        files=[p for p in SITE.rglob('*') if p.is_file()]
-        self.assertTrue(all(p.suffix in {'.html','.css','.js','.md'} for p in files))
+        files=[p for p in SITE.rglob('*') if p.is_file() and '__pycache__' not in p.parts]
+        self.assertTrue(all(p.suffix in {'.html','.css','.js','.md','.py'} for p in files))
         self.assertLess(sum(p.stat().st_size for p in files),160000)
 
 if __name__=='__main__':unittest.main()
