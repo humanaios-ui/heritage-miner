@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from html.parser import HTMLParser
 
-SITE=Path(__file__).resolve().parents[1]/'site'
+SITE=Path(__file__).resolve().parents[1]
 
 class Inspector(HTMLParser):
     def __init__(self):
