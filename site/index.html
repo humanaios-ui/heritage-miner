@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1c302c">
+  <meta name="description" content="The Anderson Story — a family-first living edition of the original 1992 family history.">
+  <title>The Anderson Story · A Living Family Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <a class="brand" href="#home" aria-label="The Anderson Story home"><span class="brandmark">A<span>✳</span></span><span>THE ANDERSON STORY <small>A LIVING FAMILY EDITION</small></span></a>
+    <button id="menuButton" class="mobileMenu" aria-controls="navlinks" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navlinks" aria-label="Main menu">
+      <a href="#home" data-nav="home">Welcome</a>
+      <a href="#read" data-nav="read">The book</a>
+      <a href="#album" data-nav="album">Family album</a>
+      <a href="#contribute" data-nav="contribute" class="navCta">Add a memory <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="heroInner">
+        <div class="heroText">
+          <p class="eyebrow"><span class="line"></span> FROM ONE GENERATION TO THE NEXT</p>
+          <h1 id="heroTitle">Every family<br>has a <em>story.</em><br>This is ours.</h1>
+          <p class="heroLead">A treasured family history, preserved as it was written in 1992. A welcoming place for new photographs, memories, and the chapters still unfolding.</p>
+          <div class="heroActions"><a class="button primary" href="#read">Explore the original book <span aria-hidden="true">→</span></a><a class="button quiet" href="#contribute">Share a family moment</a></div>
+          <div class="heroFoot"><span>THE ORIGINAL, UNCHANGED</span><span class="dot">·</span><span>THE STORY, STILL GROWING</span></div>
+        </div>
+        <div class="heroVisual" aria-label="Decorative illustration of a historical family book and new memories">
+          <div class="visualHalo"></div>
+          <div class="paperSheet backSheet"></div>
+          <div class="paperSheet middleSheet"></div>
+          <div class="bookCover"><div class="bookTrim"><div class="bookKicker">A FAMILY HISTORY</div><div class="bookOrnament">❧</div><div class="bookTitle">THE<br>ANDERSON<br>STORY</div><div class="bookRule"></div><div class="bookYear">1992</div></div></div>
+          <div class="photoMock"><div class="mountainScene"><span></span></div><p>Our story continues</p></div>
+          <div class="smallSeal">EST.<br><strong>1992</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="introBand" aria-label="About this edition"><span class="star">✳</span><p><strong>Rooted in memory. Open to tomorrow.</strong> The original pages belong to history. Everything we add becomes a new, clearly marked chapter.</p><span class="star">✳</span></section>
+
+    <section id="read" class="section bookSection" aria-labelledby="bookTitle">
+      <div class="sectionHeading"><div><p class="eyebrow">01 / THE BEGINNING</p><h2 id="bookTitle">The original <em>manuscript.</em></h2></div><p>Read the family book exactly as it survives in the original scan. No rewritten words. No silent edits.</p></div>
+      <div class="readerGrid">
+        <div class="readerPanel">
+          <div class="readerPanelTop"><span class="smallCap">YOUR PRIVATE READING COPY</span><span id="pdfStatus" class="statusBadge">NOT LOADED</span></div>
+          <div id="readerPlaceholder" class="readerPlaceholder"><div class="paperIcon">✦</div><h3>Open the family book</h3><p>Choose the original PDF from your device. It opens here in your browser, without sending the document to a server.</p><label for="pdfInput" class="button primary">Choose the manuscript <span aria-hidden="true">↗</span></label><input id="pdfInput" type="file" accept="application/pdf,.pdf" hidden><p class="readerNote">The scan is not bundled with this public preview.</p></div>
+          <div id="readerActive" hidden><div class="readerToolbar"><button id="prevPage" aria-label="Previous scanned page">←</button><label for="scanPage">SCAN <input id="scanPage" type="number" min="1" value="1" inputmode="numeric" aria-label="Scanned PDF page number"> <span id="totalPages">/ 217</span></label><button id="nextPage" aria-label="Next scanned page">→</button><button id="rotatePage" class="textButton" title="Rotate view">↻ Rotate</button></div><iframe id="pdfFrame" title="Original manuscript PDF reader" loading="lazy"></iframe><p class="readerNote">Pages are scan positions, not the printed page numbers. <a id="externalPdf" target="_blank" rel="noopener">Open PDF in a new tab ↗</a></p></div>
+        </div>
+        <aside class="contentsPanel"><p class="eyebrow">INSIDE THE BOOK</p><h3>A history in<br><em>many voices.</em></h3><p>A gentle reading guide. The full original table of contents remains inside your own scanned manuscript.</p><ol id="chapters" class="chapterList"></ol><div class="contentsFoot">ORIGINAL MANUSCRIPT · 1992</div></aside>
+      </div>
+    </section>
+
+    <section class="quoteStripe" aria-label="Family legacy"><div class="quoteDecoration">“</div><p>We keep the pages.<br><em>We carry the story forward.</em></p><div class="quoteDecoration right">”</div></section>
+
+    <section id="album" class="section albumSection" aria-labelledby="albumTitle"><div class="sectionHeading"><div><p class="eyebrow">02 / THE STORY CONTINUES</p><h2 id="albumTitle">The family <em>album.</em></h2></div><p>New moments belong here, too. They are kept separate from the original manuscript and remain in your control.</p></div>
+      <div id="albumEmpty" class="albumEmpty"><div class="albumIllustration"><div class="albumFrame">✳</div><div class="albumFrame second">✦</div></div><h3>Start with a moment worth keeping.</h3><p>Photographs, handwritten notes, and stories—all the small things that become family history.</p><a class="button primary" href="#contribute">Add the first memory <span aria-hidden="true">→</span></a></div>
+      <div id="albumList" class="albumList" hidden></div><p class="albumPrivate" id="albumPrivate">Drafts on this device only. Nothing appears on a shared family site yet.</p>
+    </section>
+
+    <section id="contribute" class="section contributeSection" aria-labelledby="contributeTitle"><div class="contributeIntro"><p class="eyebrow">03 / AN OPEN INVITATION</p><h2 id="contributeTitle">Add your piece<br>of the <em>story.</em></h2><p>A photograph from a celebration. A voice telling an old memory. A moment someone might otherwise forget.</p><div class="smallDivider"></div><p class="privacyPromise">✳ <strong>Family first.</strong> Your draft stays in your browser on this device. Nothing is uploaded or shared automatically.</p></div>
+      <div class="contributeCard"><form id="contributionForm" novalidate><p class="formKicker">NEW FAMILY CONTRIBUTION <span>PRIVATE DRAFT</span></p><label for="memoryTitle">Give this memory a title <span class="required">*</span></label><input id="memoryTitle" name="title" maxlength="110" placeholder="e.g. A day we will remember" required>
+        <div class="formRow"><div><label for="memoryType">What would you like to share?</label><select id="memoryType" name="type"><option value="photo">A photograph</option><option value="story">A written memory</option><option value="audio">An audio recording</option><option value="document">A document</option></select></div><div><label for="memoryDate">When did it happen?</label><input id="memoryDate" name="date" type="text" maxlength="70" placeholder="Year or approximate date"></div></div>
+        <label for="memoryStory">Tell the story behind it</label><textarea id="memoryStory" name="story" rows="5" maxlength="6000" placeholder="What happened? What do you remember? Who was there?"></textarea>
+        <label for="memoryFile">Add a file <span class="optional">optional</span></label><div class="uploadBox"><input id="memoryFile" type="file" accept="image/jpeg,image/png,image/webp,image/gif,audio/mpeg,audio/mp4,audio/wav,audio/webm,application/pdf,.jpg,.jpeg,.png,.webp,.gif,.mp3,.m4a,.wav,.webm,.pdf"><div class="uploadHint"><strong id="uploadLabel">Choose a photo, audio clip, or document</strong><small>JPG, PNG, WEBP, GIF, MP3, M4A, WAV, WEBM, or PDF · up to 12 MB</small></div></div><div id="filePreview" class="filePreview" hidden></div>
+        <div class="formRow"><div><label for="memoryPeople">People in this memory</label><input id="memoryPeople" maxlength="160" placeholder="Names (optional)"></div><div><label for="memoryPlace">Where?</label><input id="memoryPlace" maxlength="160" placeholder="Place (optional)"></div></div>
+        <label for="memoryBy">Contributed by <span class="required">*</span></label><input id="memoryBy" maxlength="100" placeholder="Your name" required>
+        <label for="memoryAudience">Who should eventually see it?</label><select id="memoryAudience"><option value="private">Private — keep as my draft</option><option value="family-review">Family edition — propose for review</option></select>
+        <div class="checkRow"><input id="memoryConfirm" type="checkbox" required><label for="memoryConfirm">I have permission to share this material with a family editor. Saving a draft does not publish it.</label></div>
+        <div class="formActions"><button type="submit" class="button primary">Save my draft <span aria-hidden="true">→</span></button><button type="button" class="button quiet" id="resetForm">Clear form</button></div><div id="formMessage" role="status" aria-live="polite"></div>
+      </form><div class="importRow"><p>Already have a contribution file?</p><label for="importContribution">Import a saved contribution ↗</label><input id="importContribution" type="file" accept="application/json,.json" hidden></div></div>
+    </section>
+
+    <section class="endNote"><p class="eyebrow">AN EVER-GROWING ARCHIVE</p><h2>The story belongs<br><em>to the family.</em></h2><p>Built for reading, remembering, and sharing—at the family's pace. A research layer may come later. The book comes first.</p><a href="#home">Back to the beginning ↑</a></section>
+  </main>
+  <footer><div class="footerBrand">THE ANDERSON STORY <span>✳</span></div><p>A living family edition · Prototype</p><p>No tracking. No account. No automatic uploads.</p></footer>
+</body>
+</html>
