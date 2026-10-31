@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.16 0"/></filter>
+<radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="70%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#5a4524" stop-opacity="0.35"/></radialGradient></defs>
+<rect width="600" height="800" fill="#3a3a3a"/>
+<g transform="rotate(-0.4 300 400)"><rect x="12" y="10" width="576" height="780" fill="#e9dfc4"/>
+<rect x="12" y="10" width="576" height="780" filter="url(#n)"/><rect x="12" y="10" width="576" height="780" fill="url(#v)"/>
+<text x="70" y="140" font-family="Georgia,serif" font-size="17" fill="#2b2118" >Walter grew up at Sluice House and took over</text>
+<text x="70" y="172" font-family="Georgia,serif" font-size="17" fill="#2b2118" >the mill lease in 1912. He never spoke of</text>
+<text x="70" y="204" font-family="Georgia,serif" font-size="17" fill="#2b2118" >the years before, and we have not pressed him.</text>
+<text x="70" y="236" font-family="Georgia,serif" font-size="17" fill="#2b2118" ></text>
+<text x="70" y="268" font-family="Georgia,serif" font-size="17" fill="#2b2118" >A cousin recalls a letter from overseas, kept</text>
+<text x="70" y="300" font-family="Georgia,serif" font-size="17" fill="#2b2118" >in the tin box, but nobody has seen it since.</text>
+<circle cx="470" cy="650" r="46" fill="none" stroke="#8a6a3a" stroke-width="5" opacity=".35"/><text x="300" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#2b2118">9</text>
+</g></svg>

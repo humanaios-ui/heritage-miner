@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.16 0"/></filter>
+<radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="70%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#5a4524" stop-opacity="0.35"/></radialGradient></defs>
+<rect width="600" height="800" fill="#3a3a3a"/>
+<g transform="rotate(1.2 300 400)"><rect x="12" y="10" width="576" height="780" fill="#e9dfc4"/>
+<rect x="12" y="10" width="576" height="780" filter="url(#n)"/><rect x="12" y="10" width="576" height="780" fill="url(#v)"/>
+<text x="70" y="130" font-family="Georgia,serif" font-size="17" fill="#2b2118" >In 1889 Tobias married Hester Pell at St Oswin's,</text>
+<text x="70" y="162" font-family="Georgia,serif" font-size="17" fill="#2b2118" >Marrowby. The register, we are told, was</text>
+<text x="70" y="194" font-family="Georgia,serif" font-size="17" fill="#2b2118" >signed with a steady hand on both sides.</text>
+<text x="70" y="226" font-family="Georgia,serif" font-size="17" fill="#2b2118" ></text>
+<text x="70" y="258" font-family="Georgia,serif" font-size="17" fill="#2b2118" >Their first child, Walter, arrived the next winter.</text>
+<text x="70" y="290" font-family="Georgia,serif" font-size="17" fill="#2b2118" >The cottage was by then too small, so the</text>
+<text x="70" y="322" font-family="Georgia,serif" font-size="17" fill="#2b2118" >family moved up the lane to Sluice House.</text>
+<text x="300" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#2b2118">3</text>
+</g></svg>

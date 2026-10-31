@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.16 0"/></filter>
+<radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="70%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#5a4524" stop-opacity="0.35"/></radialGradient></defs>
+<rect width="600" height="800" fill="#3a3a3a"/>
+<g transform="rotate(0 300 400)"><rect x="12" y="10" width="576" height="780" fill="#e9dfc4"/>
+<rect x="12" y="10" width="576" height="780" filter="url(#n)"/><rect x="12" y="10" width="576" height="780" fill="url(#v)"/>
+<text x="300" y="340" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#2b2118" font-style="italic">For those who kept the lamp lit,</text>
+<text x="300" y="374" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#2b2118" font-style="italic">and for those who will carry it on.</text>
+</g></svg>

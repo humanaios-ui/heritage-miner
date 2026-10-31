@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Living Edition Reader (synthetic prototype)</title>
+<link rel="stylesheet" href="reader.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the page</a>
+<header class="top">
+  <div class="brand">
+    <p class="eyebrow">Synthetic prototype &mdash; invented family, no real people</p>
+    <h1 id="book-title">Loading&hellip;</h1>
+  </div>
+  <div class="toggles" role="group" aria-label="Optional views">
+    <label class="toggle"><input type="checkbox" id="t-contrib"> Show additions since 1992</label>
+    <label class="toggle"><input type="checkbox" id="t-research"> Show research overlay</label>
+  </div>
+</header>
+
+<div id="notice" class="notice" role="note" hidden></div>
+
+<nav class="chapters" aria-label="Chapters">
+  <label for="chapter-select">Chapter</label>
+  <select id="chapter-select"></select>
+  <ol id="chapter-list" class="chapter-list"></ol>
+</nav>
+
+<main id="main" tabindex="-1">
+  <div class="pager" role="group" aria-label="Page navigation">
+    <button type="button" id="prev">&larr; Previous</button>
+    <p id="pos" class="pos" aria-live="polite"></p>
+    <button type="button" id="next">Next &rarr;</button>
+  </div>
+
+  <div id="spread" class="spread" aria-label="Facsimile and transcription">
+    <section class="facsimile" aria-labelledby="fac-h">
+      <h2 id="fac-h">Facsimile</h2>
+      <div class="sheet"><img id="scan" alt="" decoding="async"></div>
+      <p id="scan-fail" class="muted" hidden>The scan could not be loaded.</p>
+    </section>
+    <section class="transcript" aria-labelledby="tr-h">
+      <h2 id="tr-h">Transcription</h2>
+      <p id="status" class="status"></p>
+      <div id="transcription" class="text"></div>
+      <aside id="interp" class="interp" hidden>
+        <h3>Editor&rsquo;s note <span class="muted">(interpretation, not part of the text)</span></h3>
+        <p id="interp-text"></p>
+      </aside>
+    </section>
+  </div>
+
+  <section id="research" class="panel" aria-labelledby="rs-h" hidden>
+    <h2 id="rs-h">Research overlay <span class="muted">(opt-in, not part of the book)</span></h2>
+    <div id="research-body"></div>
+  </section>
+
+  <section id="contrib" class="panel additions" aria-labelledby="ct-h" hidden>
+    <h2 id="ct-h">Additions since 1992 <span class="muted">(approved, kept separate from the 1992 text)</span></h2>
+    <div id="contrib-body"></div>
+  </section>
+  <p id="err" class="err" role="alert" hidden></p>
+</main>
+
+<footer class="foot"><p>Keys: &larr; &rarr; turn pages, Home/End jump. Swipe on touch screens. All content is synthetic.</p></footer>
+<script type="module" src="reader.js"></script>
+</body>
+</html>

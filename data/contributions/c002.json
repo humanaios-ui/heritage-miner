@@ -1,0 +1,16 @@
+{
+  "id": "c002",
+  "submitted": "2026-10-12",
+  "contributor_label": "Synthetic Cousin B",
+  "kind": "correction",
+  "title": "Photo caption detail",
+  "body": "Invented note: the stone house in the photograph has a blue door in later colour pictures.",
+  "audience": "family",
+  "license": "CC-BY-4.0",
+  "involves_minor": false,
+  "status": "approved",
+  "reviewed_by": "Synthetic Reviewer R",
+  "reviewed_at": "2026-10-15",
+  "attaches_to": "p006",
+  "base_edition_version": "1992-synthetic-v1"
+}

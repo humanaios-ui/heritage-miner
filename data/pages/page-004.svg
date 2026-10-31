@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.16 0"/></filter>
+<radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="70%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#5a4524" stop-opacity="0.35"/></radialGradient></defs>
+<rect width="600" height="800" fill="#3a3a3a"/>
+<g transform="rotate(0 300 400)"><rect x="12" y="10" width="576" height="780" fill="#e9dfc4"/>
+<rect x="12" y="10" width="576" height="780" filter="url(#n)"/><rect x="12" y="10" width="576" height="780" fill="url(#v)"/>
+<text x="300" y="110" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#2b2118" font-weight="bold">CHAPTER ONE</text>
+<text x="300" y="144" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#2b2118" font-weight="bold">The Mill at Marrowby</text>
+<text x="70" y="220" font-family="Georgia,serif" font-size="17" fill="#2b2118" >Tobias Alderwick was born in the spring of 1861</text>
+<text x="70" y="250" font-family="Georgia,serif" font-size="17" fill="#2b2118" >in the cottage beside Marrowby mill, the third</text>
+<text x="70" y="280" font-family="Georgia,serif" font-size="17" fill="#2b2118" >of seven children. His father kept the sluice</text>
+<text x="70" y="310" font-family="Georgia,serif" font-size="17" fill="#2b2118" >and his mother kept the accounts, such as they were.</text>
+<text x="70" y="340" font-family="Georgia,serif" font-size="17" fill="#2b2118" ></text>
+<text x="70" y="370" font-family="Georgia,serif" font-size="17" fill="#2b2118" >He is said to have walked to Harlowe fair at nine</text>
+<text x="70" y="400" font-family="Georgia,serif" font-size="17" fill="#2b2118" >and come home with a goose and a sixpence.</text>
+<text x="300" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#2b2118">1</text>
+</g></svg>

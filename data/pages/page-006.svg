@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.16 0"/></filter>
+<radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="70%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#5a4524" stop-opacity="0.35"/></radialGradient></defs>
+<rect width="600" height="800" fill="#3a3a3a"/>
+<g transform="rotate(-0.6 300 400)"><rect x="12" y="10" width="576" height="780" fill="#e9dfc4"/>
+<rect x="12" y="10" width="576" height="780" filter="url(#n)"/><rect x="12" y="10" width="576" height="780" fill="url(#v)"/>
+<rect x="90" y="90" width="420" height="440" fill="#f6f0df" stroke="#8a7a5a"/><rect x="110" y="110" width="380" height="400" fill="#8c7a5c"/><rect x="130" y="250" width="200" height="220" fill="#6b5b43"/><rect x="170" y="300" width="40" height="55" fill="#a8977a"/><rect x="250" y="300" width="40" height="55" fill="#a8977a"/><circle cx="390" cy="260" r="22" fill="#3e3326"/><rect x="368" y="282" width="44" height="130" rx="10" fill="#3e3326"/><circle cx="440" cy="270" r="18" fill="#4a3e2e"/><rect x="420" y="288" width="40" height="124" rx="12" fill="#4a3e2e"/><rect x="110" y="410" width="380" height="100" fill="#7a6a4e" opacity=".6"/><text x="300" y="610" text-anchor="middle" font-family="'Segoe Script','Bradley Hand','Comic Sans MS',cursive" font-size="22" fill="#3a3a52" transform="rotate(-2 300 610)">Tobias &amp; Hester, outside Sluice House, c. 1895</text><text x="300" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#2b2118">5</text>
+</g></svg>
