@@ -1,0 +1,25 @@
+name: Family site smoke tests
+
+on:
+  pull_request:
+    paths:
+      - "site/**"
+      - ".github/workflows/site-smoke.yml"
+  push:
+    paths:
+      - "site/**"
+      - ".github/workflows/site-smoke.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  family-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: node --check site/app.js
+      - name: Test static site and privacy boundaries
+        run: python3 -m unittest discover -s site/tests -p 'test_static_bundle.py' -v
