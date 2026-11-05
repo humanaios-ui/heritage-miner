@@ -11,3 +11,50 @@
 @media(max-width:760px){.masthead{height:72px}.mobileMenu{display:block;background:transparent;border:1px solid #abb4a8;color:var(--forest);padding:9px 12px;font-size:12px}nav{display:none;position:absolute;left:0;right:0;top:72px;background:#faf8f2;padding:20px 25px;border-bottom:1px solid #ddd4c3;align-items:stretch;flex-direction:column;gap:18px}nav.open{display:flex}nav a{font-size:14px}.heroInner{grid-template-columns:1fr;padding:67px 7% 75px;gap:35px}.hero h1{font-size:clamp(55px,11vw,82px)}.heroVisual{min-height:405px;max-width:490px;width:100%;margin:0 auto}.bookCover{top:25px;left:25%;width:235px;height:338px}.bookTitle{font-size:28px}.paperSheet{top:45px;left:25%;height:320px;width:210px}.photoMock{width:148px;bottom:0;right:5%}.mountainScene{height:90px}.smallSeal{bottom:8px;left:11%}.introBand{gap:13px}.introBand p{font-size:13px}.section{padding:72px 6%}.sectionHeading{display:block;margin-bottom:33px}.sectionHeading>p{margin-top:18px}.readerGrid{grid-template-columns:1fr}.readerPanel{min-height:490px}.readerPlaceholder{min-height:460px}.contentsPanel{padding:32px}.chapterList{max-height:320px}.contributeSection{grid-template-columns:1fr}.contributeIntro{padding:0}.albumList{grid-template-columns:repeat(2,minmax(0,1fr))}footer{flex-direction:column;align-items:flex-start}}
 @media(max-width:480px){.heroVisual{min-height:347px}.bookCover{left:19%;height:285px;width:210px}.bookTitle{font-size:22px}.bookKicker{font-size:8px;margin-bottom:13px}.bookOrnament{margin-bottom:10px}.bookRule{margin:15px}.paperSheet{left:21%;height:275px;width:185px}.photoMock{width:120px}.smallSeal{width:55px;height:55px;font-size:8px}.smallSeal strong{font-size:13px}.contributeCard{padding:28px 20px}.formRow{grid-template-columns:1fr;gap:0}.albumList{grid-template-columns:1fr}.heroFoot{font-size:8px;line-height:1.7}.readerPlaceholder{padding:35px 25px}.readerToolbar{gap:5px}.readerToolbar .textButton{padding:5px;font-size:10px}.contentsPanel h3{font-size:32px}.quoteDecoration{display:none}.introBand .star{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Heritage background, v0.2: generated interpretation of the archival scan.
+   The source manuscript remains unchanged; this is decorative website art. */
+.hero{
+  background-color:#eee3ce;
+  background-image:linear-gradient(110deg, rgba(245,238,222,.13), rgba(252,248,239,.03) 48%, rgba(245,238,222,.23)), url('assets/heritage-parchment.webp');
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.hero::after{background:linear-gradient(0deg,rgba(54,40,21,.07),transparent 28%)}
+.heroInner{
+  grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);
+  gap:clamp(24px,4.5vw,70px);
+}
+.heroVisual{order:1;min-height:490px;pointer-events:none}
+.heroVisual>*{display:none}
+.heroText{
+  order:2;
+  padding:clamp(25px,3.6vw,53px);
+  background:rgba(250,247,238,.86);
+  border:1px solid rgba(255,252,242,.68);
+  border-radius:8px;
+  box-shadow:0 16px 48px rgba(67,51,30,.12);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+.hero h1{font-size:clamp(52px,5.5vw,85px)}
+.heroLead{color:#42544b}
+.heroFoot{color:#53665d;margin-top:38px}
+/* On narrow screens, the headline stays first and the photograph has its own space. */
+@media(max-width:760px){
+  .hero{background-position:28% center}
+  .heroInner{grid-template-columns:1fr;gap:12px;padding:48px 5% 38px}
+  .heroText{order:1;padding:28px 24px;background:rgba(250,247,238,.91)}
+  .heroVisual{order:2;min-height:265px;width:100%;max-width:none;margin:0;background:rgba(243,234,214,.06);border:1px solid rgba(255,248,230,.28);border-radius:8px}
+  .hero h1{font-size:clamp(49px,10vw,72px)}
+}
+@media(max-width:480px){
+  .hero{background-position:23% center}
+  .heroInner{padding:25px 4% 26px}
+  .heroText{padding:24px 19px}
+  .heroVisual{min-height:225px}
+  .hero h1{font-size:clamp(47px,11vw,62px)}
+  .heroFoot{margin-top:25px}
+}
